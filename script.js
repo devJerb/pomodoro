@@ -18,6 +18,7 @@ const pauseButton = document.getElementById("pause");
 const resetButton = document.getElementById("reset");
 const minutesDisplay = document.getElementById("minutes");
 const secondsDisplay = document.getElementById("seconds");
+const warningSound = document.getElementById("warning-sound");
 const orangeIconButton = document.getElementById("orange-icon");
 const notificationSound = document.getElementById("notification-sound");
 
@@ -72,9 +73,20 @@ function resetTimer() {
   updateDisplay();
 }
 
+function handleVisibilityChange() {
+  if (document.hidden) {
+    if (isRunning) {
+      pauseTimer();
+      warningSound.play();
+    }
+  }
+}
+
 startButton.addEventListener("click", startTimer);
 pauseButton.addEventListener("click", pauseTimer);
 resetButton.addEventListener("click", resetTimer);
 orangeIconButton.addEventListener("click", orangeTrigger);
+
+document.addEventListener("visibilitychange", handleVisibilityChange);
 
 updateDisplay();

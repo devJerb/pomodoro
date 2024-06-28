@@ -4,7 +4,7 @@ A simple, modern, and aesthetic Pomodoro timer app built using HTML, CSS, and Ja
 
 ## Features
 
-- **Pomodoro Timer**: 25-minute countdown timer with start, pause, and reset functionalities.
+- **Pomodoro Timer**: countdown timer with start, pause, and reset functionalities.
 - **Lava Lamp Background**: Smooth background color transitions to create a visually appealing effect.
 - **Cute Pastel Theme**: Soft and pleasing color palette for the interface elements.
 - **Notification Sound**: Plays a sound when the timer reaches zero.
