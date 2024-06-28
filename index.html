@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ber's Pomodoro</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png" />
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="./assets/images/orange.png"
+        alt="Orange Icon"
+        class="corner-icon"
+        id="orange-icon"
+      />
+      <p class="runner">&quot;You got this!&quot;</p>
+      <h1>Ber's Pompodoro</h1>
+      <div class="timer">
+        <span id="minutes">30</span>:<span id="seconds">00</span>
+      </div>
+      <div class="controls">
+        <button id="start">Start</button>
+        <button id="pause">Pause</button>
+        <button id="reset">Reset</button>
+      </div>
+    </div>
+    <audio
+      id="notification-sound"
+      src="./assets/audio/notification.mp3"
+    ></audio>
+    <script src="script.js"></script>
+  </body>
+</html>

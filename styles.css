@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "Espressonal";
+  src: url("./assets/fonts/Espressonal.otf") format("opentype");
+}
+
+::selection {
+  color: rgb(107, 107, 107);
+  background: #fff7e1;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Espressonal", sans-serif;
+  background: #fff7e1;
+  transition: background-color 0.5s;
+}
+
+body.running {
+  background: #405a33;
+}
+
+.runner {
+  color: #5b8b41;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.corner-icon {
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: 80px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out; /* Add smooth transition */
+}
+
+.corner-icon:hover {
+  animation: spin 5s ease-in-out infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(60deg);
+  }
+  40% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(300deg);
+  }
+  80% {
+    transform: rotate(420deg);
+  }
+  100% {
+    transform: rotate(540deg);
+  }
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  color: #f08030;
+}
+
+.timer {
+  font-size: 5em;
+  margin-bottom: 20px;
+  color: #5b8b41;
+}
+
+.controls button {
+  background-color: #f08030;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: "Espressonal", sans-serif;
+  transition: background-color 0.3s;
+}
+
+.controls button:hover {
+  background-color: #e36820;
+}
+
+.controls button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
