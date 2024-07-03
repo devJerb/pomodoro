@@ -104,3 +104,15 @@ h1 {
   background-color: #ccc;
   cursor: not-allowed;
 }
+
+.break-timer {
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: #5b8b41;
+}
+
+.counter {
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: #f08030;
+}
